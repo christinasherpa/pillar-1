@@ -22,3 +22,16 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block"; 
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+var arrayOfPosts = [];
+
+function createPost() {
+	var post = prompt("What's bothering you?");
+  listOfPosts.unshift(post);
+};
+  
+function listPosts() {
+	var listOfPosts = "";
+	for (var i = 0; i < arrayOfPosts.length; i++) {
+  	listOfPosts += i + "<br>";
+  return listOfPosts;
